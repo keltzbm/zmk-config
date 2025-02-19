@@ -67,15 +67,15 @@
 		};
 		utility_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
-			bindings = <
-				&kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-				&kp LCTRL &trans   &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC   &trans   &trans      &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_MUTE &kp C_VOLUME_DOWN &kp C_VOLUME_UP
-				&kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
-				&kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+// |        |            | BD      | BI     |        |   |   | PREVIOUS | PLAY/PAUSE | NEXT | MUTE | UP  | DOWN |
+// |        |            |         |        |        |   |   |          |            |      |      |     |      |
+// | BT_CLR | BT_CLR_ALL | BT_DISC | BT_PRV | BT_NXT |   |   |          | BT1        | BT2  | BT3  | BT4 | BT5  |
+// |                     |                  |            |   |                       |             |            |
+			bindings = 
+				&trans &trans &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC &trans &trans &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_MUTE &kp C_VOLUME_DOWN &kp C_VOLUME_UP
+				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+				&bt BT_CLR &bt BT_CLR_ALL &bt BT_DISC &bt BT_PRV &bt BT_NXT &trans &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
+				&trans &trans &trans &trans &trans &trans
 			>;
 		};
 	};
