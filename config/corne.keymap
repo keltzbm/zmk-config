@@ -16,9 +16,9 @@
 / {
 	conditional_layers {
 		compatible = "zmk,conditional_layers";
-		utility_layer {
-			if-layers = <LOWER UPPER>;
-			then-layer = <UTILITY>;
+		tri_layer {
+			if-layers = <1 2>;
+			then-layer = <3>;
 		};
 	};
 };
