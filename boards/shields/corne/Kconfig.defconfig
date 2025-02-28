@@ -1,7 +1,10 @@
+# Copyright (c) 2020 Ryan Cross
+# SPDX-License-Identifier: MIT
+
 if SHIELD_CORNE_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Corne"
+    default "CORNE"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
@@ -39,5 +42,11 @@ choice LV_COLOR_DEPTH
 endchoice
 
 endif # LVGL
+
+if ZMK_RGB_UNDERGLOW
+
+config WS2812_STRIP
+    default y
+endif
 
 endif
