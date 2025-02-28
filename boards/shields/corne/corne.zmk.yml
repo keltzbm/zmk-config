@@ -1,15 +1,15 @@
 file_format: "1"
 id: corne
-name: corne
+name: Corne
 type: shield
-url: https://github.com/keltzbm
+url: https://github.com/foostan/crkbd/
 requires: [pro_micro]
 exposes: [i2c_oled]
 features:
   - keys
   - display
-  - encoder
   - underglow
+  - studio
 siblings:
   - corne_left
   - corne_right

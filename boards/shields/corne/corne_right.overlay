@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 Ryan Cross
+ * Copyright (c) 2020 Pete Johanson
  *
  * SPDX-License-Identifier: MIT
  */
@@ -10,15 +10,17 @@
     col-offset = <6>;
 };
 
-&kscan0 {
-    col-gpios = <&pro_micro 14 GPIO_ACTIVE_HIGH>,
-				<&pro_micro 9 GPIO_ACTIVE_HIGH>,
-				<&pro_micro 18 GPIO_ACTIVE_HIGH>,
-				<&pro_micro 19 GPIO_ACTIVE_HIGH>,
-				<&pro_micro 10 GPIO_ACTIVE_HIGH>,
-				<&pro_micro 16 GPIO_ACTIVE_HIGH>;
+&five_column_transform {
+    col-offset = <6>;
 };
 
-&right_encoder {
-    status = "okay";
+&kscan0 {
+    col-gpios
+        = <&pro_micro 14 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 9 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 18 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 19 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 10 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 16 GPIO_ACTIVE_HIGH>
+        ;
 };
