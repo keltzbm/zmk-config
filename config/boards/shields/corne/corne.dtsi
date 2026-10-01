@@ -61,6 +61,10 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10
         wakeup-source;
 
         diode-direction = "col2row";
+		// Row 1 is rewired on this board: the stock shield reads it on
+		// pro_micro 5 (D5, P0.24), which was shorted, so a wire takes it to
+		// D9, which is P1.06 on the nice!nano. Keep this line when taking
+		// changes from upstream's corne.dtsi.
 		row-gpios
 			= <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			, <&gpio1 06 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
